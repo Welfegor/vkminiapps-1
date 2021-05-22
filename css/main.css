@@ -304,10 +304,12 @@ header {
     border-radius: 10px;
     margin-bottom: 30px;
     padding: 15px;
+    margin-bottom: 10px;
 }
 
 .quotes-right-block {
     background: #1a1b1c;
+    min-height: 120px;
 }
 
 .quotes-left-block {
