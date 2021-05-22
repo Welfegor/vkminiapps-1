@@ -5,6 +5,20 @@ body, ul, li, h2, h3 {
     color: #fff;
 }
 
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
 a {
     text-decoration: none;
     color: #fff;
@@ -171,10 +185,12 @@ header {
 .about {
     position: relative;
     height: 100vh;
+    min-height: 950px;
     background-color: #080a0b;
 }
 
 .about-elements {
+    min-height: 950px;
     height: 100vh;
     position: relative;
     z-index: 3;
@@ -232,7 +248,7 @@ header {
 .quotes {
     min-height: 950px;
     position: relative;
-    height: 100vh;
+    max-height: 100vh;
     background: url("../img/vk-net.jpg") center / cover;
 }
 
@@ -248,10 +264,10 @@ header {
 }
 
 .quotes-elements {
+    height: 100%;
     display: flex;
     position: relative;
     z-index: 3;
-    height: 100%;
     align-items: center;
     justify-content: space-between;
 }
@@ -390,9 +406,11 @@ header {
 footer {
     background: #080A0B;
     height: 100vh;
+    min-height: 950px;
 }
 
 .footer-elements {
+    min-height: 950px;
     display: flex;
     flex-direction: column;
     height: 100vh;
